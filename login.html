@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    <!-- Link Css Tailwind -->
+    <link rel="stylesheet" href="disc/output.css " />
+    <!-- CSS File Styling -->
+    <link rel="shortcut icon" href="images/logo.png.webp" type="png" />
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- //////////////////////////////////////////////////////////////////// -->
+     <!-- Start Meta Tages ******************-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow" />
+
+    <!-- Regular Meta Info -->
+    <title>E-Commerce</title>
+    <meta charset="utf-8" />
+    <meta name="description"
+        content="Discover the best online shopping experience with our e-commerce website. Enjoy a wide range of products, competitive prices, and exclusive offers. Shop now with ease and security!" />
+
+    <meta name="keywords" content="online shopping, e-commerce, buy online, fashion, home goods, beauty products, best prices, discounts, exclusive offers, fast delivery, secure payment" />
+
+    <link rel="author" href="kerolos khairy" />
+    <link rel="canonical" href="https://kerllouskhairy987.github.io/E-commerce-design" />
+    <!-- Link Of The Main Page From GitHub If I Have Alot Of Same Pages -->
+
+    <!-- Facebook Meta Info -->
+    <!-- <meta property="og:url" content="{{pageUrl}}" /> -->
+    <!-- *********????? -->
+    <meta property="og:image"
+        content="https://kerllouskhairy987.github.io/E-commerce-design/images/ecommerce.jpg" />
+    <meta property="og:description"
+        content="Discover the best online shopping experience with our e-commerce website. Enjoy a wide range of products, competitive prices, and exclusive offers. Shop now with ease and security!" />
+    <meta property="og:title" content="Home > E-commerce" />
+    <meta property="og:site_name" content="E-commerce" />
+    <meta property="og:see_also" content="https://kerllouskhairy987.github.io/E-commerce-design" />
+    <!-- Link Of Home Page GitHub -->
+
+    <!-- Google+ Meta Info -->
+    <meta itemprop="name" content="Tweeter Light" />
+    <meta itemprop="description"
+        content="Discover the best online shopping experience with our e-commerce website. Enjoy a wide range of products, competitive prices, and exclusive offers. Shop now with ease and security! Follow us for top-notch content and valuable insights." />
+    <meta itemprop="image"
+        content="https://kerllouskhairy987.github.io/E-commerce-design/images/ecommerce.jpg" />
+
+    <!-- Twitter Meta Info -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:url" content="https://kerllouskhairy987.github.io/E-commerce-design" />
+    <meta name="twitter:title" content="E-commerce" />
+    <meta name="twitter:description"
+        content="Discover the best online shopping experience with our e-commerce website. Enjoy a wide range of products, competitive prices, and exclusive offers. Shop now with ease and security! Follow us for top-notch content and valuable insights." />
+    <meta name="twitter:image"
+        content="https://kerllouskhairy987.github.io/E-commerce-design/images/ecommerce.jpg" />
+
+    <!-- End Meta Tages *********************-->
+
+
+</head>
+
+<body>
+    <div class="flex lg:justify-center justify-center items-center container lg:gap-10 min-h-screen py-5 capitalize">
+        <div class="">
+            <img class="hidden lg:block w-full min-w-[600px]" src="images/login.avif" alt="Login Image">
+        </div>
+
+        <div class="w-full">
+            <a title="home page" href="index.html"><img class="block mx-auto pb-5" src="images/logo.png.webp"
+                    alt="Logo Image"></a>
+
+            <form action="" method="post">
+                <div>
+                    <label class="login-label" for="user">username</label>
+                    <input type="text" id="user" placeholder="Enter Your Username" required minlength="14"
+                        class="login-input">
+                </div>
+
+                <div>
+                    <label class="login-label mt-5" for="passLogin">password</label>
+                    <div class="relative">
+                        <input type="password" name="pass" id="passLogin" placeholder="Enter Your Password" required
+                            minlength="15" class="pe-7 login-input">
+                        <a ondblclick="showPasswordlog()" onclick="hidePasswordlog()" title="show password" href="#"><i
+                                class="fa-solid fa-eye absolute top-1/2 -translate-y-1/2 right-0 w-6"></i></a>
+                    </div>
+                    <a title="forget password" href="#"
+                        class="block text-end mt-1 text-Main text-sm hover:underline">forget password...</a>
+                </div>
+
+                <input type="submit" value="Login" class="login-submit">
+            </form>
+            <hr>
+            <h3 class="capitalize w-fit mx-auto font-bold my-5">login with</h3>
+            <div class="center-center mb-5 gap-3">
+                <a class="login-link" title="login with google" href="#"><i class="fa-brands fa-google"></i></a>
+                <a class="login-link" title="login with facebook" href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a class="login-link" title="login with github" href="#"><i class="fa-brands fa-github"></i></a>
+                <a class="login-link" title="login with git" href="#"><i class="fa-brands fa-git"></i></a>
+                <a class="login-link" title="login with linkedin" href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+
+            <div class="center-center gap-x-2 my-5">
+                <div class="h-[1px] bg-Main/10 flex-grow"></div>
+                <p>Or</p>
+                <div class="h-[1px] bg-Main/10 flex-grow"></div>
+            </div>
+
+            <a title="go to register" href="register.html" class="text-xs">doesn't have an account <span
+                    class="hover:underline text-Main font-bold">go to register</span></a>
+        </div>
+    </div>
+
+    <!-- js links -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

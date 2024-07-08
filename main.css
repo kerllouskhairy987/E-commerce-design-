@@ -1,0 +1,146 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  /* Start General Styling ******************************/
+
+  .overlay {
+    @apply hidden;
+  }
+  .overlay.active {
+    @apply block;
+  }
+
+  input {
+    @apply outline-none border-none bg-transparent;
+  }
+  /* End General Styling ********************************/
+  /* Start Part One In Header ***************************/
+
+  .part-one-header {
+    @apply container lg:flex hidden justify-between items-center py-2 text-sm;
+  }
+  .center-center {
+    @apply flex justify-center items-center;
+  }
+  .link-header {
+    @apply w-7 h-7 bg-white rounded-full center-center hover:bg-Main hover:text-white transition duration-500;
+  }
+  .select-style {
+    @apply outline-none border-none px-4 py-1 bg-transparent;
+  }
+
+  /* End Part One In Header ******************************/
+  /* Start Part Two In Header ****************************/
+
+  .drop-link {
+    @apply absolute z-50 top-5 bg-Dark text-white px-4 py-3 w-32 font-thin text-sm capitalize hidden scale-0;
+  }
+  .drop-link.active {
+    @apply block scale-100;
+  }
+
+  header {
+    @apply sticky top-0 bg-white z-50;
+  }
+
+  .part-two-header {
+    @apply container uppercase py-3 flex lg:justify-between lg:items-center lg:flex-row flex-col;
+  }
+  .counter-products {
+    @apply min-w-4 h-4 rounded-full bg-Main absolute -top-2 right-0 center-center text-[8px] px-1;
+  }
+
+  /* End Part Two In Header ****************************/
+  /* Start Aside In Header ****************************/
+
+  .aside {
+    @apply fixed h-screen -left-full duration-1000 top-0 overflow-auto w-full sm:w-72 bg-white z-20 sm:px-9 py-10 px-4;
+  }
+
+  .close-icon {
+    @apply w-8 h-8 rounded-full border-2 border-Main center-center hover:bg-Danger hover:text-white hover:border-none;
+  }
+
+  .aside.active {
+    @apply left-0;
+  }
+
+  .aside-links {
+    @apply hidden ms-5 text-white;
+  }
+
+  .aside-links a {
+    @apply p-3;
+  }
+
+  .aside-links.active {
+    @apply flex;
+  }
+
+  /* End Aside In Header ****************************/
+  /* Start Main In Header ****************************/
+
+  main .department {
+    @apply bg-Main text-white flex justify-between items-center ps-10 pe-2 py-2 text-sm cursor-pointer font-bold;
+  }
+
+  #list_product {
+    @apply scale-0 transition h-0 border-none ps-10 pe-2 text-sm;
+  }
+
+  #list_product.active {
+    @apply scale-100 h-auto;
+  }
+
+  .search-part {
+    @apply flex justify-between py-2 ps-5 pe-20 border text-xs sm:text-sm sm:my-10 mt-10 mb-3 lg:my-0 relative flex-grow me-7 md:me-12;
+  }
+
+  .btn-search {
+    @apply uppercase absolute top-0 right-0 w-fit h-full bg-Main text-white font-bold px-3 text-center;
+  }
+
+  .roubded-text-Mian {
+    @apply me-3 sm:me-4 w-10 h-10 rounded-full bg-Gray/20 p-3 center-center text-Main;
+  }
+
+  .up-home-bg {
+    @apply bg-[url('../images/banner.jpg.webp')] flex-grow w-full min-h-80 mt-5 ps-20 flex items-center;
+  }
+
+  .btn-shop-now {
+    @apply bg-Main px-4 py-2 shadow-sm text-white uppercase mt-4 text-xs rounded font-bold tracking-widest w-fit;
+  }
+  /* End Main In Header *****************************/
+  /* Start Slider  **********************************/
+  .title-slider {
+    @apply tracking-wider font-bold text-base bg-white absolute bottom-2 right-5 left-5 h-fit px-4 sm:py-1 text-center uppercase line-clamp-1;
+  }
+  /* End Slider  **********************************/
+  /* Start Products Category   *********************/
+  .center-header {
+    @apply after:content-[''] after:absolute after:bottom-0 after:w-11 after:h-[2px] after:bg-Main after:left-1/2 after:-translate-x-1/2 hover:after:w-16 font-bold text-xl;
+  }
+  /* End Products Category   ***********************/
+  /* Start Footer   ********************************/
+  .link-footer {
+    @apply hover:ms-2 ms-0 transition-all duration-300 hover:text-Main;
+  }
+  /* End Footer   **********************************/
+  /* StartLogin Page */
+  .login-input {
+    @apply border-2 focus:ring-1 focus:ring-sky-500 border-Danger p-2 bg-Main/10 w-full rounded invalid:border-pink-500 invalid:text-pink-600 focus:invalid:border-pink-500 focus:invalid:ring-pink-500;
+  }
+  .login-label {
+    @apply block after:content-['*'] after:text-Danger after:top-0 after:left-0 mb-1;
+  }
+  .login-submit {
+    @apply block mx-auto my-4 w-fit px-4 py-2 rounded-full bg-Main text-white font-bold text-sm tracking-widest cursor-pointer hover:bg-Main/90 transition-all;
+  }
+  .login-link {
+    @apply w-10 h-10 rounded-full center-center bg-Main/10 hover:bg-Main hover:text-white transition-all duration-500;
+  }
+  /* End Login Page */
+}
